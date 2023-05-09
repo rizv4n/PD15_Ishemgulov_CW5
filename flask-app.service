@@ -1,0 +1,10 @@
+[UNIT]
+Description=Flask app service
+After=network.target
+
+[SERVICE]
+WorkingDirectory=/home/rishemgulov/skyprogram
+ExcesStart=/home/rishemgulov/skyprogram/venv/bin/python main.py
+
+[INSTALL]
+WantedBy=milti-user.target
